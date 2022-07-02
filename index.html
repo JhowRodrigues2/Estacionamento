@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Estacionamento - Jhow Rodrigues</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="topo">
+      <header><p>SISTEMA ESTACIONAMENTO</p></header>
+      <h1>Preencha os campos de dados:</h1>
+    </div>
+    <div class="menu">
+      <input type="text" id="name" placeholder=" Nome" />
+      <input type="text" id="model-car" placeholder=" Modelo do veículo" />
+      <input type="text" id="license-plate" placeholder=" Placa do veículo" />
+      <select name="select" id="selectVaga">
+        <option value="0" selected>Selecione a vaga...</option>
+        <option value="1" id="vaga1">Vaga 1</option>
+        <option value="2" id="vaga2">Vaga 2</option>
+        <option value="3" id="vaga3">Vaga 3</option>
+        <option value="4" id="vaga4">Vaga 4</option>
+        <option value="5" id="vaga5">Vaga 5</option>
+        <option value="6" id="vaga6">Vaga 6</option>
+        <option value="7" id="vaga7">Vaga 7</option>
+        <option value="8" id="vaga8">Vaga 8</option>
+        <option value="9" id="vaga9">Vaga 9</option>
+      </select>
+      <select name="select" id="selectTime">
+        <option value="0" selected>Selecione o período...</option>
+        <option value="15 Minutos - R$2,00">15 minutos- R$2,00</option>
+        <option value="1 hora - R$5,00">1 hora - R$5,00</option>
+        <option value="3 horas - R$15,00">3 horas - R$15,00</option>
+        <option value="5 horas - R$20,00">5 horas - R$20,00</option>
+        <option value="12 horas - R$30,00">12 horas - R$30,00</option>
+        <option value="24 horas - R$ 80,00">24 horas - R$ 80,00</option>
+      </select>
+    </div>
+    <div class="main">
+      <div id="box1" onclick="AbreVaga1()">VAGA 1</div>
+      <div id="box2" onclick="AbreVaga2()">VAGA 2</div>
+      <div id="box3" onclick="AbreVaga3()">VAGA 3</div>
+      <div id="box4" onclick="AbreVaga4()">VAGA 4</div>
+      <div id="box5" onclick="AbreVaga5()">VAGA 5</div>
+      <div id="box6" onclick="AbreVaga6()">VAGA 6</div>
+      <div id="box7" onclick="AbreVaga7()">VAGA 7</div>
+      <div id="box8" onclick="AbreVaga8()">VAGA 8</div>
+      <div id="box9" onclick="AbreVaga9()">VAGA 9</div>
+      <button class="reserva" onclick="getCar()">Reservar</button>
+    </div>
+    <div class="footer">
+      <h2>© Jhow Rodrigues</h2>
+    </div>
+    <script src="script.js"></script>
+    <script src="/Estacionamento/lib/moment/moment.min.js"></script>
+  </body>
+</html>
